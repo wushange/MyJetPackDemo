@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyJetPackDemo</string>
+
+    <string name="app_detail">我是一个工具类APP</string>
+</resources>

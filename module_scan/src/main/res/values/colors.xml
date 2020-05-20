@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ffffff75_txt_color">#c0ffffff</color>
+    <color name="txt_color_light">#b3ffffff</color>
+    <color name="home_btn_text_color">#999</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="popup_window_line">#eee</color>
+    <color name="lineRippleLineColoe">#ffffff</color>
+
+    <color name="setting_item_color">#323232</color>
+
+    <!-- Android standard ICS color -->
+    <!-- Android standard ICS color -->
+    <color name="transparent">#00000000</color>
+    <!-- Android standard ICS color -->
+    <color name="capture_text_cover_bg">#00000000</color>
+</resources>
