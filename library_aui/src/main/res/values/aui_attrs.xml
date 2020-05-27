@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="aui_content_padding_horizontal" format="dimension"/> <!-- 已废弃 -->
+    <attr name="aui_content_spacing_horizontal" format="dimension"/> <!-- margin 和 padding 等使用的内容通用水平间距 -->
+    <!--**********************************************
+  *                qmui common color               *
+  **********************************************-->
+    <attr name="aui_config_color_blue" format="color" />
+    <attr name="aui_config_color_red" format="color" />
+    <attr name="aui_config_color_separator" format="color" />
+    <attr name="aui_config_color_separator_darken" format="color" />
+    <attr name="aui_config_color_background" format="color" />
+    <attr name="aui_config_color_background_pressed" format="color" />
+    <attr name="aui_config_color_black" format="color" />
+    <attr name="aui_config_color_link" format="color" />
+    <attr name="aui_config_color_pressed" format="color" />
+
+    <attr name="aui_config_color_gray_1" format="color" />
+    <attr name="aui_config_color_gray_2" format="color" />
+    <attr name="aui_config_color_gray_3" format="color" />
+    <attr name="aui_config_color_gray_4" format="color" />
+    <attr name="aui_config_color_gray_5" format="color" />
+    <attr name="aui_config_color_gray_6" format="color" />
+    <attr name="aui_config_color_gray_7" format="color" />
+    <attr name="aui_config_color_gray_8" format="color" />
+    <attr name="aui_config_color_gray_9" format="color" />
+
+    <attr name="aui_alpha_pressed" format="float" />
+    <attr name="aui_alpha_disabled" format="float" />
+
+    <attr name="aui_general_shadow_elevation" format="dimension" />
+    <attr name="aui_general_shadow_alpha" format="float" />
+    <!--**********************************************
+        *                   topbar               *
+        **********************************************-->
+    <attr name="aui_topbar_height" format="dimension" />
+    <!--************ TopBar ***********-->
+    <declare-styleable name="AUITopBar">
+        <attr name="aui_topbar_title_gravity" format="enum">
+            <enum name="left_center" value="19" />
+            <enum name="center" value="17" />
+        </attr>
+        <attr name="aui_topbar_need_separator" format="boolean" />
+        <attr name="aui_topbar_separator_color" format="color" />
+        <attr name="aui_topbar_separator_height" format="dimension" />
+        <attr name="aui_topbar_bg_color" format="color" />
+        <attr name="aui_topbar_left_back_drawable_id" format="reference" />
+        <attr name="aui_topbar_title_text_size" format="dimension" />
+        <attr name="aui_topbar_title_text_size_with_subtitle" format="dimension" />
+        <attr name="aui_topbar_subtitle_text_size" format="dimension" />
+        <attr name="aui_topbar_title_color" format="color" />
+        <attr name="aui_topbar_subtitle_color" format="color" />
+        <attr name="aui_topbar_title_margin_horizontal_when_no_btn_aside" format="dimension" />
+        <attr name="aui_topbar_title_container_padding_horizontal" format="dimension" />
+        <attr name="aui_topbar_image_btn_width" format="dimension" />
+        <attr name="aui_topbar_image_btn_height" format="dimension" />
+        <attr name="aui_topbar_text_btn_padding_horizontal" format="dimension" />
+        <attr name="aui_topbar_text_btn_color_state_list" format="reference" />
+        <attr name="aui_topbar_text_btn_text_size" format="dimension" />
+    </declare-styleable>
+    <attr name="AUITopBarStyle" format="reference" />
+
+
+    <declare-styleable name="AUITextCommonStyleDef">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:background" />
+        <attr name="android:gravity" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+        <attr name="android:singleLine" />
+        <attr name="android:ellipsize" />
+        <attr name="android:maxLines" />
+        <attr name="android:lineSpacingExtra" />
+        <attr name="android:drawablePadding" />
+        <attr name="android:textColorHint" />
+        <attr name="android:textStyle" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AUITextAppearance">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+        <attr name="android:textStyle" />
+        <attr name="android:typeface" />
+        <attr name="android:textAllCaps" />
+        <attr name="android:shadowColor" />
+        <attr name="android:shadowDy" />
+        <attr name="android:shadowDx" />
+        <attr name="android:shadowRadius" />
+    </declare-styleable>
+
+
+    <!-- QMUICollapsingTopBarLayout start -->
+    <declare-styleable name="AUICollapsingTopBarLayout">
+        <attr name="aui_expandedTitleMargin" format="dimension" />
+        <attr name="aui_expandedTitleMarginStart" format="dimension" />
+        <attr name="aui_expandedTitleMarginTop" format="dimension" />
+        <attr name="aui_expandedTitleMarginEnd" format="dimension" />
+        <attr name="aui_expandedTitleMarginBottom" format="dimension" />
+        <attr name="aui_expandedTitleTextAppearance" format="reference" />
+        <attr name="aui_collapsedTitleTextAppearance" format="reference" />
+        <attr name="aui_contentScrim" format="color" />
+        <attr name="aui_statusBarScrim" format="color" />
+        <attr name="aui_topBarId" format="reference" />
+        <attr name="aui_scrimVisibleHeightTrigger" format="dimension" />
+        <attr name="aui_scrimAnimationDuration" format="integer" />
+        <attr name="aui_collapsedTitleGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="center" value="0x11" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="aui_expandedTitleGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="center" value="0x11" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="aui_titleEnabled" format="boolean" />
+        <attr name="android:title" />
+    </declare-styleable>
+    <declare-styleable name="AUICollapsingTopBarLayout_Layout">
+        <attr name="aui_layout_collapseMode">
+            <enum name="none" value="0" />
+            <enum name="pin" value="1" />
+            <enum name="parallax" value="2" />
+        </attr>
+        <attr name="aui_layout_collapseParallaxMultiplier" format="float" />
+    </declare-styleable>
+    <!-- QMUICollapsingTopBarLayout end -->
+
+
+    <attr name="aui_backgroundColor" format="color"/>
+    <attr name="aui_borderColor" format="color"/>
+    <attr name="aui_borderWidth" format="dimension"/>
+    <attr name="aui_linkColor" format="color"/>
+    <attr name="aui_orientation" format="enum">
+        <enum name="horizontal" value="0"/>
+        <enum name="vertical" value="1"/>
+    </attr>
+    <attr name="aui_title" format="string"/>
+    <!-- 同时指定四个方向的圆角大小 -->
+    <attr name="aui_radius" format="dimension"/>
+    <declare-styleable name="AUILayout">
+        <attr name="android:maxWidth"/>
+        <attr name="android:maxHeight"/>
+        <attr name="android:minWidth"/>
+        <attr name="android:minHeight"/>
+        <attr name="aui_bottomDividerHeight" format="dimension"/>
+        <attr name="aui_bottomDividerColor" format="color|reference"/>
+        <attr name="aui_bottomDividerInsetLeft" format="dimension"/>
+        <attr name="aui_bottomDividerInsetRight" format="dimension"/>
+        <attr name="aui_topDividerHeight" format="dimension"/>
+        <attr name="aui_topDividerColor" format="color|reference"/>
+        <attr name="aui_topDividerInsetLeft" format="dimension"/>
+        <attr name="aui_topDividerInsetRight" format="dimension"/>
+        <attr name="aui_leftDividerWidth" format="dimension"/>
+        <attr name="aui_leftDividerColor" format="color|reference"/>
+        <attr name="aui_leftDividerInsetTop" format="dimension"/>
+        <attr name="aui_leftDividerInsetBottom" format="dimension"/>
+        <attr name="aui_rightDividerWidth" format="dimension"/>
+        <attr name="aui_rightDividerColor" format="color|reference"/>
+        <attr name="aui_rightDividerInsetTop" format="dimension"/>
+        <attr name="aui_rightDividerInsetBottom" format="dimension"/>
+        <attr name="aui_radius"/>
+        <attr name="aui_borderColor"/>
+        <attr name="aui_borderWidth"/>
+        <attr name="aui_outerNormalColor" format="color|reference"/>
+        <attr name="aui_hideRadiusSide" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="left" value="4"/>
+        </attr>
+        <attr name="aui_showBorderOnlyBeforeL" format="boolean"/>
+        <attr name="aui_shadowElevation" format="dimension"/>
+        <attr name="aui_useThemeGeneralShadowElevation" format="boolean"/>
+        <attr name="aui_shadowAlpha" format="float"/>
+        <attr name="aui_outlineInsetTop" format="dimension"/>
+        <attr name="aui_outlineInsetLeft" format="dimension"/>
+        <attr name="aui_outlineInsetRight" format="dimension"/>
+        <attr name="aui_outlineInsetBottom" format="dimension"/>
+        <attr name="aui_outlineExcludePadding" format="boolean"/>
+    </declare-styleable>
+
+</resources>

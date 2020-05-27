@@ -1,2 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wsg.base" />
+    package="com.wsg.base">
+
+    <application>
+        <activity
+            android:name="com.wsg.base.crash.ACrashDefaultErrorActivity"
+            android:process=":error_activity" />
+        <provider
+            android:name="com.wsg.base.crash.ACrashInitProvider"
+            android:authorities="${applicationId}.customactivityoncrashinitprovider"
+            android:exported="false"
+            android:initOrder="101" />
+    </application>
+</manifest>

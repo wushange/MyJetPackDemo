@@ -13,12 +13,6 @@ android {
         consumerProguardFiles 'consumer-rules.pro'
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
 
     //统一资源前缀,规范资源引用
     resourcePrefix "common_"
@@ -34,5 +28,6 @@ android {
 
 dependencies {
     api project(':library_base')
+    api project(':library_aui')
     api project(':library_fragmentation')
 }

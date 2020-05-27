@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Tencent is pleased to support the open source community by making AUI_Android available.
+
+ Copyright (C) 2017-2018 THL A29 Limited, a Tencent company. All rights reserved.
+
+ Licensed under the MIT License (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+
+ http://opensource.org/licenses/MIT
+
+ Unless required by applicable law or agreed to in writing, software distributed under the License is
+ distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ either express or implied. See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+
+    <style name="AUIAppRootTheme.Compat" parent="Theme.AppCompat.DayNight" />
+
+    <style name="AUIAppBaseTheme.Compat" parent="AUIAppRootTheme.Compat"></style>
+
+
+    <style name="AUIAppConfigTheme.Compat" parent="AUIAppBaseTheme.Compat">
+        <item name="colorPrimary">?attr/aui_config_color_blue</item>
+        <item name="colorPrimaryDark">?attr/aui_config_color_blue</item>
+        <item name="colorAccent">?attr/aui_config_color_blue</item>
+        <item name="colorControlNormal">@color/aui_config_color_white</item>
+        <item name="android:textColorPrimary">?attr/aui_config_color_blue</item>
+        <item name="android:textColorSecondary">?attr/aui_config_color_blue
+        </item> <!--返回箭头也是用这个颜色-->
+        <item name="android:windowBackground">@color/aui_config_color_white</item>
+        <item name="android:editTextColor">?attr/aui_config_color_black</item>
+    </style>
+
+    <style name="AUI.Compat" parent="AUIAppConfigTheme.Compat">
+        <item name="aui_content_padding_horizontal">@dimen/aui_content_padding_horizontal
+        </item> <!-- 已废弃 -->
+        <item name="aui_content_spacing_horizontal">@dimen/aui_content_spacing_horizontal</item>
+
+        <!--**********************************************
+        *                qmui common color               *
+        **********************************************-->
+        <item name="aui_config_color_blue">@color/aui_config_color_blue</item>
+        <item name="aui_config_color_red">@color/aui_config_color_red</item>
+        <item name="aui_config_color_separator">@color/aui_config_color_separator</item>
+        <item name="aui_config_color_separator_darken">@color/aui_config_color_separator_darken
+        </item>
+        <item name="aui_config_color_background">@color/aui_config_color_background</item>
+        <item name="aui_config_color_background_pressed">
+            @color/aui_config_color_background_pressed
+        </item>
+        <item name="aui_config_color_black">@color/aui_config_color_black</item>
+        <item name="aui_config_color_link">@color/aui_config_color_link</item>
+        <item name="aui_config_color_pressed">@color/aui_config_color_pressed</item>
+
+        <item name="aui_config_color_gray_1">@color/aui_config_color_gray_1</item>
+        <item name="aui_config_color_gray_2">@color/aui_config_color_gray_2</item>
+        <item name="aui_config_color_gray_3">@color/aui_config_color_gray_3</item>
+        <item name="aui_config_color_gray_4">@color/aui_config_color_gray_4</item>
+        <item name="aui_config_color_gray_5">@color/aui_config_color_gray_5</item>
+        <item name="aui_config_color_gray_6">@color/aui_config_color_gray_6</item>
+        <item name="aui_config_color_gray_7">@color/aui_config_color_gray_7</item>
+        <item name="aui_config_color_gray_8">@color/aui_config_color_gray_8</item>
+        <item name="aui_config_color_gray_9">@color/aui_config_color_gray_9</item>
+
+        <item name="aui_alpha_pressed">0.5</item>
+        <item name="aui_alpha_disabled">0.5</item>
+
+        <item name="aui_general_shadow_elevation">14dp</item>
+        <item name="aui_general_shadow_alpha">0.25</item>
+
+
+        <!--**********************************************
+        *                  qmui topbar                   *
+        ***********************************************-->
+        <item name="aui_topbar_height">56dp</item>
+
+
+        <!--**********************************************
+        *               qmui 提供的控件样式                *
+        ***********************************************-->
+        <item name="AUITopBarStyle">@style/AUI.TopBar</item>
+    </style>
+
+
+    <!-- 注意，与AUI.NoActionBar不同，这里windowActionBar与windowNoTitle没有前缀android -->
+    <style name="AUI.Compat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+</resources>

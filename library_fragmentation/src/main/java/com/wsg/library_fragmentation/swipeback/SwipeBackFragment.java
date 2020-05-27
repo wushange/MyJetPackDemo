@@ -18,6 +18,8 @@ import com.wsg.library_fragmentation.swipeback.core.SwipeBackFragmentDelegate;
  * Created by YoKey on 16/4/19.
  */
 public class SwipeBackFragment extends SupportFragment implements ISwipeBackFragment {
+
+
     final SwipeBackFragmentDelegate mDelegate = new SwipeBackFragmentDelegate(this);
 
     @Override

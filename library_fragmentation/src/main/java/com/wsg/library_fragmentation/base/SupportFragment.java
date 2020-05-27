@@ -23,9 +23,6 @@ import com.wsg.library_fragmentation.core.anim.FragmentAnimator;
  * Created by YoKey on 17/6/22.
  */
 public class SupportFragment extends Fragment implements ISupportFragment {
-	public static SupportFragment newInstance() {
-		return new SupportFragment();
-	}
 
 	final SupportFragmentDelegate mDelegate = new SupportFragmentDelegate(this);
 	protected SupportActivity _mActivity;

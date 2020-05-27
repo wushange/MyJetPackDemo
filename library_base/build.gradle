@@ -8,24 +8,21 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         versionCode rootProject.versionCode
         versionName rootProject.versionName
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
     }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
 
 }
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
     api "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
-    api "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycle"
-    api 'com.blankj:utilcodex:1.28.4'
+    api "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycle"
+    api "androidx.lifecycle:lifecycle-livedata:$rootProject.lifecycle"
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
     api 'com.google.android.material:material:1.1.0'
+    api 'com.blankj:utilcodex:1.28.4'
+
+
 }

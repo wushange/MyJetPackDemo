@@ -1,2 +1,2 @@
-rootProject.name='MyJetPackDemo'
-include ':app', ':library_fragmentation', ':library_common', ':library_base', ':module_scan'
+rootProject.name = 'MyJetPackDemo'
+include ':app', ':library_aui', ':library_fragmentation', ':library_common', ':library_base', ':module_scan'
