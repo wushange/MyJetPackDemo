@@ -28,6 +28,5 @@ android {
 
 dependencies {
     api project(':library_base')
-    api project(':library_aui')
-    api project(':library_fragmentation')
+
 }

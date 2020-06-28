@@ -41,6 +41,26 @@
         <item name="aui_topbar_text_btn_color_state_list">@color/aui_topbar_text_color</item>
         <item name="aui_topbar_text_btn_text_size">16sp</item>
     </style>
+    <!--********************* Button *********************-->
+    <style name="AUI.RoundButton" parent="@style/AUIButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:padding">0dp</item>--><!-- 不用 android:padding，而用各个方向分别指定 padding，方便子类覆盖 -->
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="aui_isRadiusAdjustBounds">true</item>
+        <item name="aui_backgroundColor">@color/aui_s_transparent</item>
+        <item name="aui_borderWidth">?attr/aui_round_btn_border_width</item>
+        <item name="aui_borderColor">?attr/aui_round_btn_border_color</item>
+        <item name="android:textColor">?attr/aui_round_btn_text_color</item>
+    </style>
 
 
 </resources>

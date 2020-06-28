@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="CommonAppTheme" parent="AUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/common_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/common_colorPrimaryDark</item>
+        <item name="colorAccent">@color/common_colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="AUITopBarStyle">@style/CommonTopBarStyle</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="CommonAppMainStyle" parent="CommonAppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--统一指定标题栏样式 -->
+    <style name="CommonTopBarStyle" parent="AUI.TopBar">
+        <item name="aui_topbar_left_back_drawable_id">@drawable/ic_topbar_back</item>
+        <item name="aui_topbar_need_separator">false</item>
+        <item name="aui_topbar_bg_color">@color/common_colorPrimary</item>
+        <item name="aui_topbar_title_color">@color/common_colorPrimaryDark</item>
+        <item name="aui_topbar_subtitle_color">@color/common_colorPrimaryDark</item>
+        <item name="aui_topbar_text_btn_color_state_list">@color/common_colorPrimaryDark</item>
+        <item name="aui_topbar_height">48dp</item>
+        <item name="aui_topbar_image_btn_height">48dp</item>
+    </style>
+
+
+</resources>

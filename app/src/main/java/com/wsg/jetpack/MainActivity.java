@@ -1,13 +1,11 @@
 package com.wsg.jetpack;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-	private TextView mTv;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void initView() {
-		mTv = findViewById(R.id.tv);
-		mTv.setText("卧室");
+
 	}
 }

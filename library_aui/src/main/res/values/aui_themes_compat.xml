@@ -81,6 +81,7 @@
         *               qmui 提供的控件样式                *
         ***********************************************-->
         <item name="AUITopBarStyle">@style/AUI.TopBar</item>
+        <item name="AUIButtonStyle">@style/AUI.RoundButton</item>
     </style>
 
 

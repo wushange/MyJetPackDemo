@@ -1,4 +1,4 @@
-package com.legendmohe.circleview.model;
+package com.wsg.aui.customwidget;
 
 /**
  * Created by legendmohe on 16/5/22.
@@ -20,11 +20,11 @@ public class Dot {
     }
 
     public int getCenterX() {
-        return baseX + (int) (distance*Math.cos(angle));
+        return baseX + (int) (distance* Math.cos(angle));
     }
 
     public int getCenterY() {
-        return baseY + (int) (distance*Math.sin(angle));
+        return baseY + (int) (distance* Math.sin(angle));
     }
 
     public int getAlpha() {

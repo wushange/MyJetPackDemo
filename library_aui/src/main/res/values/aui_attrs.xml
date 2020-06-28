@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <attr name="aui_content_padding_horizontal" format="dimension"/> <!-- 已废弃 -->
-    <attr name="aui_content_spacing_horizontal" format="dimension"/> <!-- margin 和 padding 等使用的内容通用水平间距 -->
+    <attr name="aui_content_padding_horizontal" format="dimension" /> <!-- 已废弃 -->
+    <attr name="aui_content_spacing_horizontal" format="dimension" /> <!-- margin 和 padding 等使用的内容通用水平间距 -->
     <!--**********************************************
   *                qmui common color               *
   **********************************************-->
@@ -147,58 +147,93 @@
     <!-- QMUICollapsingTopBarLayout end -->
 
 
-    <attr name="aui_backgroundColor" format="color"/>
-    <attr name="aui_borderColor" format="color"/>
-    <attr name="aui_borderWidth" format="dimension"/>
-    <attr name="aui_linkColor" format="color"/>
+    <attr name="aui_backgroundColor" format="color" />
+    <attr name="aui_borderColor" format="color" />
+    <attr name="aui_borderWidth" format="dimension" />
+    <attr name="aui_linkColor" format="color" />
     <attr name="aui_orientation" format="enum">
-        <enum name="horizontal" value="0"/>
-        <enum name="vertical" value="1"/>
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
     </attr>
-    <attr name="aui_title" format="string"/>
-    <!-- 同时指定四个方向的圆角大小 -->
-    <attr name="aui_radius" format="dimension"/>
+    <attr name="aui_title" format="string" />
     <declare-styleable name="AUILayout">
-        <attr name="android:maxWidth"/>
-        <attr name="android:maxHeight"/>
-        <attr name="android:minWidth"/>
-        <attr name="android:minHeight"/>
-        <attr name="aui_bottomDividerHeight" format="dimension"/>
-        <attr name="aui_bottomDividerColor" format="color|reference"/>
-        <attr name="aui_bottomDividerInsetLeft" format="dimension"/>
-        <attr name="aui_bottomDividerInsetRight" format="dimension"/>
-        <attr name="aui_topDividerHeight" format="dimension"/>
-        <attr name="aui_topDividerColor" format="color|reference"/>
-        <attr name="aui_topDividerInsetLeft" format="dimension"/>
-        <attr name="aui_topDividerInsetRight" format="dimension"/>
-        <attr name="aui_leftDividerWidth" format="dimension"/>
-        <attr name="aui_leftDividerColor" format="color|reference"/>
-        <attr name="aui_leftDividerInsetTop" format="dimension"/>
-        <attr name="aui_leftDividerInsetBottom" format="dimension"/>
-        <attr name="aui_rightDividerWidth" format="dimension"/>
-        <attr name="aui_rightDividerColor" format="color|reference"/>
-        <attr name="aui_rightDividerInsetTop" format="dimension"/>
-        <attr name="aui_rightDividerInsetBottom" format="dimension"/>
-        <attr name="aui_radius"/>
-        <attr name="aui_borderColor"/>
-        <attr name="aui_borderWidth"/>
-        <attr name="aui_outerNormalColor" format="color|reference"/>
+        <attr name="android:maxWidth" />
+        <attr name="android:maxHeight" />
+        <attr name="android:minWidth" />
+        <attr name="android:minHeight" />
+        <attr name="aui_bottomDividerHeight" format="dimension" />
+        <attr name="aui_bottomDividerColor" format="color|reference" />
+        <attr name="aui_bottomDividerInsetLeft" format="dimension" />
+        <attr name="aui_bottomDividerInsetRight" format="dimension" />
+        <attr name="aui_topDividerHeight" format="dimension" />
+        <attr name="aui_topDividerColor" format="color|reference" />
+        <attr name="aui_topDividerInsetLeft" format="dimension" />
+        <attr name="aui_topDividerInsetRight" format="dimension" />
+        <attr name="aui_leftDividerWidth" format="dimension" />
+        <attr name="aui_leftDividerColor" format="color|reference" />
+        <attr name="aui_leftDividerInsetTop" format="dimension" />
+        <attr name="aui_leftDividerInsetBottom" format="dimension" />
+        <attr name="aui_rightDividerWidth" format="dimension" />
+        <attr name="aui_rightDividerColor" format="color|reference" />
+        <attr name="aui_rightDividerInsetTop" format="dimension" />
+        <attr name="aui_rightDividerInsetBottom" format="dimension" />
+        <attr name="aui_radius" />
+        <attr name="aui_borderColor" />
+        <attr name="aui_borderWidth" />
+        <attr name="aui_outerNormalColor" format="color|reference" />
         <attr name="aui_hideRadiusSide" format="enum">
-            <enum name="none" value="0"/>
-            <enum name="top" value="1"/>
-            <enum name="right" value="2"/>
-            <enum name="bottom" value="3"/>
-            <enum name="left" value="4"/>
+            <enum name="none" value="0" />
+            <enum name="top" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="3" />
+            <enum name="left" value="4" />
         </attr>
-        <attr name="aui_showBorderOnlyBeforeL" format="boolean"/>
-        <attr name="aui_shadowElevation" format="dimension"/>
-        <attr name="aui_useThemeGeneralShadowElevation" format="boolean"/>
-        <attr name="aui_shadowAlpha" format="float"/>
-        <attr name="aui_outlineInsetTop" format="dimension"/>
-        <attr name="aui_outlineInsetLeft" format="dimension"/>
-        <attr name="aui_outlineInsetRight" format="dimension"/>
-        <attr name="aui_outlineInsetBottom" format="dimension"/>
-        <attr name="aui_outlineExcludePadding" format="boolean"/>
+        <attr name="aui_showBorderOnlyBeforeL" format="boolean" />
+        <attr name="aui_shadowElevation" format="dimension" />
+        <attr name="aui_useThemeGeneralShadowElevation" format="boolean" />
+        <attr name="aui_shadowAlpha" format="float" />
+        <attr name="aui_outlineInsetTop" format="dimension" />
+        <attr name="aui_outlineInsetLeft" format="dimension" />
+        <attr name="aui_outlineInsetRight" format="dimension" />
+        <attr name="aui_outlineInsetBottom" format="dimension" />
+        <attr name="aui_outlineExcludePadding" format="boolean" />
     </declare-styleable>
 
+    <attr name="AUIButtonStyle" format="reference" />
+
+    <!-- 圆角是否要自适应为 View 高度的一半 -->
+    <attr name="aui_isRadiusAdjustBounds" format="boolean" />
+    <!-- 同时指定四个方向的圆角大小 -->
+    <attr name="aui_radius" format="dimension" />
+    <!-- 指定左上方圆角的大小 -->
+    <attr name="aui_radiusTopLeft" format="dimension" />
+    <!-- 指定右上方圆角的大小 -->
+    <attr name="aui_radiusTopRight" format="dimension" />
+    <!-- 指定左下方圆角的大小 -->
+    <attr name="aui_radiusBottomLeft" format="dimension" />
+    <!-- 指定右下方圆角的大小 -->
+    <attr name="aui_radiusBottomRight" format="dimension" />
+
+    <!--**********************************************
+    *                  qmui btn                      *
+    **********************************************-->
+    <attr name="aui_round_btn_text_size" format="dimension" />
+    <attr name="aui_round_btn_border_width" format="dimension" />
+    <!-- android 5.0一下不能再selector中用?attr,必须要整个drawable由使用者提供 -->
+    <attr name="aui_round_btn_bg_color" format="color" />
+    <attr name="aui_round_btn_border_color" format="color" />
+    <attr name="aui_round_btn_text_color" format="color" />
+
+
+    <declare-styleable name="AUIRoundButton">
+        <attr name="aui_backgroundColor" />
+        <attr name="aui_borderColor" />
+        <attr name="aui_borderWidth" />
+        <attr name="aui_isRadiusAdjustBounds" />
+        <attr name="aui_radius" />
+        <attr name="aui_radiusTopLeft" />
+        <attr name="aui_radiusTopRight" />
+        <attr name="aui_radiusBottomLeft" />
+        <attr name="aui_radiusBottomRight" />
+    </declare-styleable>
 </resources>

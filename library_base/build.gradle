@@ -23,6 +23,8 @@ dependencies {
     api 'androidx.constraintlayout:constraintlayout:1.1.3'
     api 'com.google.android.material:material:1.1.0'
     api 'com.blankj:utilcodex:1.28.4'
-
+    api 'com.tencent:mmkv-static:1.1.2'
+    api project(':library_aui')
+    api project(':library_fragmentation')
 
 }

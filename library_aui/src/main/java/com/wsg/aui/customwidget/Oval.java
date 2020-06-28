@@ -1,4 +1,4 @@
-package com.legendmohe.circleview.model;
+package com.wsg.aui.customwidget;
 
 import android.graphics.RectF;
 

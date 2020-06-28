@@ -94,12 +94,16 @@
         *               qmui 提供的控件样式                *
         ***********************************************-->
         <item name="AUITopBarStyle">@style/AUI.TopBar</item>
+        <item name="AUIButtonStyle">@style/AUI.RoundButton</item>
     </style>
+
+    <style name="AUIButton" parent="AUIButtonBase" />
+
+    <style name="AUIButtonBase" parent="android:Widget.Holo.Light.Button" />
 
     <style name="AUI.NoActionBar">
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-
 
 </resources>
